@@ -9,6 +9,13 @@
             "email": "hoanghuulong.krn@gamil.com"
         }
     ],
+    "require": {
+        "laravelcollective/html" : "6.2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Courses\\Courses\\": "/"
+        }
+    },
     "minimum-stability": "dev",
-    "require": {}
 }
