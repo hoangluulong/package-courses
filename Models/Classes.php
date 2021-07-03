@@ -1,6 +1,6 @@
 <?php
 
-namespace Cansa\Intership\Models;
+namespace Courses\Courses\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
