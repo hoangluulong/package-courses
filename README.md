@@ -6,7 +6,7 @@
 
 ## Step 1: Add service providers to **config/app.php**
 
-1. Coursess\Courses\CoursesServiceProvider::class,
+1. Courses\Courses\CoursesServiceProvider::class,
 
 ## Step 2: Add class aliases to **config/app.php**
 
