@@ -7,6 +7,7 @@
 ## Step 1: Add service providers to **config/app.php**
 
 1. Courses\Courses\CoursesServiceProvider::class,
+2. Collective\Html\HtmlServiceProvider::class,
 
 ## Step 2: Add class aliases to **config/app.php**
 
@@ -17,33 +18,27 @@
 ## Step 3: Change model providers class Auth aliases to **config/auth.php**
 1. 'model' => Courses\Courses\Models\User::class,
 
-## Step 4: Add middleware in app/Http/Kernel.php
+## Step 4: Delete user and password migration file in database/migrations
 
-1.  \Illuminate\Session\Middleware\StartSession::class,
-1.  \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-
-
-## Step 5: Delete user and password migration file in database/migrations
-
-## Step 6: add session
+## Step 5: add session
 
 1. php artisan session:table
 
-## Step 7: Install publish
+## Step 6: Install publish
 
 1. php artisan vendor:publish --provider="Courses\Courses\CoursesServiceProvider" --force
 
-## Step 8: Publish the package’s config and assets :
+## Step 7: Publish the package’s config and assets :
 
 1. php artisan vendor:publish --tag=lfm_config
 1. php artisan vendor:publish --tag=lfm_public
 
-## Step 9: Clear cache
+## Step 8: Clear cache
 1. php artisan route:clear
 1. php artisan config:clear
 1. php artisan storage:link
 
-## Step 10: Migrate and Seeder
+## Step 9: Migrate and Seeder
 Run the following
 1. php artisan migrate
 1. php artisan db:seed
