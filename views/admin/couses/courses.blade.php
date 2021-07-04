@@ -4,7 +4,7 @@
 <div class="container-fluid">
     <nav class="navbar navbar-light navbar-expand-md">
         <div class="navbar-brand" href="#">Courses</div>
-        <a href="{{ route('diary.create') }}" class="btn btn-primary btn-sm ml-auto" type="button">Add Diary</a>
+        <a href="{{ route('course.create') }}" class="btn btn-primary btn-sm ml-auto" type="button">Add Course</a>
     </nav>
     <div class="card shadow">
         <div class="card-body">
@@ -33,21 +33,12 @@
                             <td><input type="checkbox" /></td>
                             @endif
                             <td>edit
-                                <!-- <a class="px-2" href="{{ route('diary.edit',['id'=>$diary->diary_id]) }}"><span class="fas fa-pencil-alt"></span></a>
-                                <a class="px-2" href="{{ route('diary.delete',['diary_id'=>$diary->diary_id]) }}"><span class="fas fa-trash-alt"></span></a> -->
+                                <a class="px-2" href="{{ route('course.edit',['id'=>$course->course_id]) }}"><span class="fas fa-pencil-alt"></span></a>
+                                <a class="px-2" href="{{ route('course.delete',['course_id'=>$course->course_id]) }}"><span class="fas fa-trash-alt"></span></a>
                             </td>
                         </tr>
                         @endforeach
                     </tbody>
-                    <tfoot>
-                        <tr>
-                            <td><strong>Diary Name</strong></td>
-                            <td><strong>User Name</strong></td>
-                            <td><strong>Weeks</strong></td>
-                            <td><strong>Status</strong></td>
-                            <td><strong>Operations</strong></td>
-                        </tr>
-                    </tfoot>
                 </table>
             </div>
             <div class="row">

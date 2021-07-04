@@ -48,7 +48,6 @@ class UserType extends Model
         $user_type->save();
     }
 
-    //xóa 1 user_type ($request lấy từ Request $request,bao gồm weeks, diaries_contents, comments có liên quan)
     static function deleteUserType($request){
         $user_type = UserType::getUserTypeById($request->usertype_id);
         $user_type->delete();

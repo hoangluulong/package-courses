@@ -19,12 +19,12 @@ Route::get('courses', [Courses\Courses\Controllers\CoursesController::class, 'in
 
 //create courses
 Route::get('courses/create', [Courses\Courses\Controllers\CoursesController::class, 'create'])->name('course.create');
-Route::post('courses/cr', [Courses\Courses\Controllers\CoursesController::class, 'createDiary'])->name('course.store');
+Route::post('courses/cr', [Courses\Courses\Controllers\CoursesController::class, 'createCourses'])->name('course.store');
 
-//update diary
+//update courses
 Route::get('courses/update', [Courses\Courses\Controllers\CoursesController::class, 'edit'])->name('course.edit');
 Route::post('courses/ud', [Courses\Courses\Controllers\CoursesController::class, 'update'])->name('course.update');
 
 
-//delete diary
+//delete courses
 Route::get('courses/delete', [Courses\Courses\Controllers\CoursesController::class, 'delete'])->name('course.delete');

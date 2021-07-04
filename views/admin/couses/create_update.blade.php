@@ -13,7 +13,7 @@
             <div class="card-body">
                 @if (isset($course))
                     <form method="post" action="{{ route('course.update') }}">
-                        <input hidden name="course_id" value="{{$course->diary_id}}"></input>
+                        <input hidden name="course_id" value="{{$course->course_id}}"></input>
                     @else
                         <form method="post" action="{{ route('course.store') }}">
                 @endif

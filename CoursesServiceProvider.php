@@ -51,7 +51,7 @@ class CoursesServiceProvider extends ServiceProvider {
 
     /**
      * Public config to system
-     * @source: vendor/cansa/package-courses/config
+     * @source: vendor/courses/package-courses/config
      * @destination: config/
      */
     protected function publishConfig() {
@@ -64,7 +64,7 @@ class CoursesServiceProvider extends ServiceProvider {
 
     /**
      * Public view to system
-     * @source: vendor/cansa/package-courses/Views
+     * @source: vendor/courses/package-courses/Views
      * @destination: resources/views/vendor/package-courses
      */
     protected function publishViews() {

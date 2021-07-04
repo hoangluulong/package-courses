@@ -29,7 +29,7 @@ class CourseSubject extends Model
         return Course::find($id);
     }
 
-    //add 1 diary_content
+    //add 1 courses subject
     static function insertCourseSubject($request){
         $course_subject = new CourseSubject();
         $course_subject->course_id = $request->course_name;

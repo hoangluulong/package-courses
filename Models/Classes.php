@@ -43,7 +43,7 @@ class Class extends Model
 
     //Update, edit 1 class ($request lấy từ Request $request)
     static function updateClass($request){
-        $class = Diary::getClassById($request->class_id);
+        $class = Class::getClassById($request->class_id);
         $class->teacher_id = $request->teacher_id;
         $class->course_id = $request->course_id;
         $class->faculty_id = $request->faculty_id;

@@ -12,11 +12,10 @@
     <link rel="stylesheet" href="  {!! asset('packages/courses/package-courses/fonts/fontawesome-all.min.css') !!}">
     <link rel="stylesheet" href="  {!! asset('packages/courses/package-courses/fonts/font-awesome.min.css') !!}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="  {!! asset('packages/cansa/package-courses/fonts/fontawesome5-overrides.min.css') !!}">
+    <link rel="stylesheet" href="  {!! asset('packages/courses/package-courses/fonts/fontawesome5-overrides.min.css') !!}">
 </head>
     <!-- Content -->
     @yield('content')
-
     <!-- Footer -->
     {!! Html::script('packages/courses/package-courses/js/jquery-3.6.0.min.js') !!}
     {!! Html::script('packages/courses/package-courses/bootstrap/js/bootstrap.min.js') !!}
