@@ -21,7 +21,7 @@ class UsersSeeder extends Seeder
                 'user_name' => Str::random(10),
                 'usertype_id' => mt_rand(1, 5),
                 'group_id' => mt_rand(1, 5),
-                'user_email' => 'user'.$i.'@gmail.com',
+                'user_email' => 'admin'.$i.'@admin.com',
                 'user_password' => Hash::make('123456'),
                 'faculty_id' => mt_rand(1, 5),
                 'status' => 1,
