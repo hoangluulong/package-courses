@@ -125,7 +125,7 @@ class User extends Authenticatable
             return redirect()->route('profile');
         }
 
-        return view('package-intership::auth.login');
+        return view('package-courses::auth.login');
     }
 
     //đăng xuất
