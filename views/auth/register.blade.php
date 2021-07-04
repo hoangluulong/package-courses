@@ -1,4 +1,4 @@
-@extends('package-intership::layout')
+@extends('package-courses::layout')
 
 @section('content')
 

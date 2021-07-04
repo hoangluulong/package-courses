@@ -1,4 +1,4 @@
-@extends('package-intership::layout')
+@extends('package-courses::layout')
 @section('content')
 <body class="bg-gradient-primary">
     <div class="container">
